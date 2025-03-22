@@ -1,0 +1,89 @@
+/* Mobile Portrait */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+  }
+
+  .features-text,
+  .features-illustration {
+    flex: 1;
+  }
+  .feature-grid {
+    flex-wrap: wrap;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .footer {
+    padding: 40px 0 30px;
+  }
+  .hero-description {
+    font-size: 16px;
+  }
+  .feature-title {
+    font-size: 20px;
+  }
+  .feature-description {
+    font-size: 16px;
+  }
+  .text-content {
+    margin-bottom: 30px;
+  }
+  .benefit-title {
+    font-size: 18px;
+  }
+  .benefit-description {
+    font-size: 16px;
+  }
+  .benefit-item {
+    margin-bottom: 10px;
+  }
+  .benefit-item img {
+    width: 48px;
+    height: 48px;
+  }
+  .accordion-button {
+    font-size: 18px;
+  }
+  .accordion-body {
+    font-size: 16px;
+  }
+  .main-content {
+    padding: 16px;
+  }
+
+  .signup-container {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .signup-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  .sp-footer {
+    padding: 16px;
+  }
+
+  .primary-links,
+  .secondary-links,
+  .disclaimer {
+    text-align: center;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-height: 480px) and (min-width: 481px) {
+  /* Styles for mobile landscape */
+}
+
+/* Tablet Portrait */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablet portrait */
+}
+
+/* Tablet Landscape */
+@media (max-height: 768px) and (min-width: 769px) {
+  /* Styles for tablet landscape */
+}
