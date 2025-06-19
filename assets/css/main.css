@@ -373,7 +373,7 @@ body {
 /* Footer */
 .footer {
   background-color: rgba(6, 134, 123, 0.1);
-  padding: 100px 0 50px;
+  padding: 30px 0 30px;
   width: 100%;
   font-family: "Overpass", sans-serif !important;
 }
@@ -418,7 +418,7 @@ body {
 
 .meta-text {
   font-family: "Overpass", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.6;
   text-align: center;
   margin-top: 30px;
@@ -621,4 +621,14 @@ body {
 
 a {
   color: #017670;
+}
+
+.footer-content {
+  margin-top: 40px;
+}
+
+.footer-content .footer-text {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
