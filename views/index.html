@@ -13,8 +13,20 @@
       /* Mobile-only button sizing */
       @media (max-width: 991.98px) {
         .menu-btn {
-          padding: 8px 20px !important;
+          padding: 13px 20px !important;
           font-size: 14px !important;
+        }
+
+        /* Ensure login button is completely hidden on mobile inside nav menu */
+        .navbar-collapse .menu-btn.mobile-hidden {
+          display: none !important;
+        }
+      }
+
+      /* Desktop - show the login button */
+      @media (min-width: 992px) {
+        .navbar-collapse .menu-btn.mobile-hidden {
+          display: flex !important;
         }
       }
     </style>
@@ -74,10 +86,11 @@
                 </li>
               </ul>
 
-              <!-- Sign-up & Login Buttons (desktop layout) -->
+              <!-- Sign-up & Login Buttons -->
               <div class="d-flex">
-                <a href="signup.html" class="outline me-2 menu-btn">Create an Account</a>
-                <a href="login.html" class="menu-btn d-none d-lg-block">Login</a>
+                <a href="signup.html" class="outline me-2 menu-btn">Open Account</a>
+                <!-- Login button shows on desktop only - completely hidden on mobile -->
+                <a href="login.html" class="menu-btn mobile-hidden">Login</a>
               </div>
             </div>
           </div>
@@ -557,58 +570,6 @@
           <div class="logo-footer">
             <img src="../assets/images/footer-logo.png" alt="Geojit Logo" class="footer-logo" loading="lazy" />
           </div>
-          <!-- <div class="footer-columns">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="footer-column">
-                  <h3 class="footer-title">Registered Office</h3>
-                  <address class="footer-address">
-                    7th Floor,34/659-P, Civil Line Road, Padivattom, Edappally,
-                    Kochi-682024, Kerala, India
-                  </address>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="footer-column">
-                  <h3 class="footer-title">Contact</h3>
-                  <p class="footer-text">Phone: +91 484-2901000</p>
-                  <p class="footer-text">www.geojit.com/gil</p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="footer-column">
-                  <h3 class="footer-title">For Investor Queries</h3>
-                  <p class="footer-text">customercare@geojit.com</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="footer-disclaimer">
-            <h4 class="footer-subtitle">Disclaimer</h4>
-            <p class="disclaimer-text">
-              Investment in securities market are subject to market risks, read
-              all the related documents carefully before investing. Geojit
-              Financial Services Limited does not make any representations or
-              warranties about the insurance products, servicing of policy and
-              adjudication of claims and cannot be held liable for the same.
-              This mail contains only an indication of the insurance product.
-              For more details on risk factors, terms, conditions and
-              exclusions, please read the respective policy documents.
-            </p>
-            <p class="disclaimer-text">
-              GFSL is a licensed corporate agent with License No. CA0226 issued
-              by IRDAI.
-            </p>
-
-            <h4 class="footer-subtitle">Disclosure</h4>
-            <p class="disclaimer-text">
-              These are not Exchange traded products and the Member is just
-              acting as distributor. All disputes with respect to the
-              distribution activity would not have access to Exchange investor
-              redressal or Arbitration mechanism.
-            </p>
-          </div> -->
           <div class="footer-content">
             <p class="footer-text mb-1">Geojit Investments Ltd.</p>
             <p class="footer-text">
