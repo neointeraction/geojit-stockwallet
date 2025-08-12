@@ -9,6 +9,16 @@
     <link href="../assets/css/main.css" rel="stylesheet" />
     <link href="../assets/css/responsive.css" rel="stylesheet" />
 
+    <style>
+      /* Mobile-only button sizing */
+      @media (max-width: 991.98px) {
+        .menu-btn {
+          padding: 8px 20px !important;
+          font-size: 14px !important;
+        }
+      }
+    </style>
+
     <title>Home - Geojit Financial Services</title>
   </head>
   <body>
@@ -20,6 +30,9 @@
             <a class="navbar-brand" href="#">
               <img src="../assets/images/h-logo.png" alt="StockWallet Logo" loading="lazy" />
             </a>
+
+            <!-- Login Button (visible on mobile only) -->
+            <a href="login.html" class="menu-btn d-lg-none me-2">Login</a>
 
             <!-- Navbar Toggler for Mobile -->
             <button
@@ -48,11 +61,11 @@
                 </li>
               </ul>
 
-              <!-- Sign-up & Login Buttons -->
-              <!-- <div class="d-flex">
-                <a href="signup.html" class="outline me-2 menu-btn">Sign up</a>
-                <a href="login.html" class="menu-btn">Login</a>
-              </div> -->
+              <!-- Sign-up & Login Buttons (desktop layout) -->
+              <div class="d-flex">
+                <a href="signup.html" class="outline me-2 menu-btn">Create an Account</a>
+                <a href="login.html" class="menu-btn d-none d-lg-block">Login</a>
+              </div>
             </div>
           </div>
         </nav>
@@ -305,7 +318,7 @@
                     placeholder.
                   </li>
                   <li>Use the '+' button to increase your investment in multiples of the minimum amount.</li>
-                  <li>Once the desired amount is set, click on ‘Subscribe’.</li>
+                  <li>Once the desired amount is set, click on 'Subscribe'.</li>
                   <li>Review and accept the Terms & Conditions.</li>
                   <li>Confirm your subscription in the pop-up window.</li>
                   <li>A confirmation message will appear once the subscription is successful.</li>
