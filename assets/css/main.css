@@ -59,7 +59,7 @@ body {
   text-decoration: none;
   color: #fff;
   border-radius: 8px;
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 

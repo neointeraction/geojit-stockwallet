@@ -25,18 +25,31 @@
     <section class="header-banner">
       <header class="header" data-aos="fade-down">
         <nav class="navbar navbar-expand-lg">
-          <div class="container">
+          <div class="container d-flex justify-content-between align-items-center">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
               <img src="../assets/images/h-logo.png" alt="StockWallet Logo" loading="lazy" />
             </a>
 
-            <!-- Login Button (visible on mobile only) -->
-            <a href="login.html" class="menu-btn d-lg-none me-2">Login</a>
+            <!-- Mobile Right Section: Login Button + Hamburger Menu -->
+            <div class="d-flex d-lg-none align-items-center">
+              <a href="login.html" class="menu-btn me-2">Login</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
 
-            <!-- Navbar Toggler for Mobile -->
+            <!-- Desktop Hamburger Menu (hidden on mobile) -->
             <button
-              class="navbar-toggler"
+              class="navbar-toggler d-none"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
